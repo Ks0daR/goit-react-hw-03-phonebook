@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  font-family: sans-serif;
+}
+
+.submit {
+  border: none;
+  background-color: rgb(104, 104, 233);
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}

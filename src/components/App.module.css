@@ -1,0 +1,7 @@
+.primary{
+    text-align: center;
+}
+
+.secondary{
+    composes: primary;
+}

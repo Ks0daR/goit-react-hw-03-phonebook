@@ -1,0 +1,24 @@
+.list {
+  list-style: square;
+  margin: auto;
+  width: 800px;
+}
+
+.listElement {
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.buttonList {
+  text-align: right;
+  border: none;
+  background-color: rgb(104, 104, 233);
+  font-size: 20px;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}
