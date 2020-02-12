@@ -20,8 +20,6 @@ export default class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevState);
-    console.log(this.state);
     localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
   }
 
@@ -53,10 +51,13 @@ export default class App extends Component {
   };
 
   removeContacts = contactId => {
-    console.log(contactId);
+    if (this.state.contacts.length === 2) {
+      this.setState({ searchQuery: '' });
+    }
     this.setState(state => {
       return {
         contacts: state.contacts.filter(contact => contact.id !== contactId),
+        // searchQuery: '',
       };
     });
   };
